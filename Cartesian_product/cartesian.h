@@ -2,16 +2,20 @@
 #include <iostream>
 #include <utility>
 #include <vector>
-
-using namespace std;
+#include <string>
+#include <map>
 
 class cartesian
 {
 public:
 	cartesian();
-	
+	void prompt();
+	void create_pair();
+	void display();
 
 private:
-	vector<pair<int, int> > elements;
+	std::map<int, std::vector<std::string>> elements;
+	std::vector <int> A;
+	std::vector <std::string> B;
 };
 
